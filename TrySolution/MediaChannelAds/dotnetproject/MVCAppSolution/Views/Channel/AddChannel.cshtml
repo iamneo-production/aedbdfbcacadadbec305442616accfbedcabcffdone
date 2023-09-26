@@ -1,0 +1,31 @@
+@model BookStoreApp.Models.Channel
+
+@{
+    ViewData["Title"] = "Add Channel";
+}
+
+<h2>Add Channel Details</h2>
+
+<form asp-controller="Channel" asp-action="AddChannel" method="post">
+    <div class="form-group">
+        <label for="ChannelName">Channel Name</label>
+        <input type="text" class="form-control" id="ChannelName" name="ChannelName" required>
+    </div>
+    <div class="form-group">
+        <label for="POCName">POC Name</label>
+        <input type="text" class="form-control" id="POCName" name="POCName" required>
+    </div>
+    <div class="form-group">
+        <label for="CommercialPerAd">Commercial Per Ad</label>
+        <input type="text" class="form-control" id="CommercialPerAd" name="CommercialPerAd" required>
+    </div>
+     <div class="form-group">
+        <label for="MailID">MailID</label>
+        <input type="text" class="form-control" id="MailID" name="MailID" required>
+    </div>
+     <div class="form-group">
+        <label for="ContactNumber">Contact Number</label>
+        <input type="text" class="form-control" id="ContactNumber" name="ContactNumber" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Channel</button>
+</form>
